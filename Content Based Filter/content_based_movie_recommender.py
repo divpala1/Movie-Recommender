@@ -49,7 +49,7 @@ features = ["keywords", "cast", "genres", "director"]
 
 # STEP 3: Creating a column in DF which has all the selected features combined.
 
-# After the try-except block ran, the problem revealed to be that some "keywords" were missing/NaN (NaN is type(float)). To encounter that the missing values were filled using fillna().
+# After the try-except block ran, the problem revealed to be that some "keywords" were missing/NaN (NaN is type=float). To encounter that, the missing values were filled using fillna().
 df[features] = df[features].fillna("")
 
 
